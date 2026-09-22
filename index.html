@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espaço Jovem — Loja Salesiana</title>
+<meta name="description" content="Chaveiros, copos, camisetas e produtos com identidade salesiana. Compre com propósito, invista no bem.">
+
+<!-- SUBSTITUA: favicon -->
+<link rel="icon" href="data:,">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <a href="#topo" class="logo" aria-label="Espaço Jovem — página inicial">
+      <!-- SUBSTITUA: pela logo real (imagem) da loja -->
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="var(--navy)" stroke-width="2.5"/>
+          <path d="M13 24c2-6 5-9 7-9s5 3 7 9" stroke="var(--pink)" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="20" cy="14" r="2.6" fill="var(--yellow)"/>
+        </svg>
+      </span>
+      <span class="logo-text">Espaço<strong>Jovem</strong></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#chaveiros">Chaveiros</a></li>
+        <li><a href="#copos">Copos</a></li>
+        <li><a href="#camisetas">Camisas</a></li>
+        <li><a href="#outros">Outros</a></li>
+        <li><a href="#vocacional">Vocacional</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menuMobile" aria-label="Abrir menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="menuMobile" aria-label="Navegação mobile" hidden>
+    <ul>
+      <li><a href="#chaveiros">Chaveiros</a></li>
+      <li><a href="#copos">Copos</a></li>
+      <li><a href="#camisetas">Camisas</a></li>
+      <li><a href="#outros">Outros</a></li>
+      <li><a href="#vocacional">Vocacional</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" aria-label="Apresentação da loja">
+    <div class="hero-grid">
+
+      <div class="mosaic-card card-blue hero-intro reveal">
+        <p class="eyebrow-free">Todo produto carrega uma missão</p>
+        <h1>A loja que veste, decora e evangeliza a juventude salesiana.</h1>
+        <p class="hero-sub">Chaveiros, copos, camisetas e muito mais — pensados por jovens, feitos com propósito, para financiar projetos pastorais.</p>
+        <a href="#chaveiros" class="btn btn-light">Ver produtos</a>
+      </div>
+
+      <div class="mosaic-card card-yellow hero-frase reveal">
+        <p class="frase-destaque">"Compre com propósito, invista no bem."</p>
+      </div>
+
+      <div class="mosaic-card card-pink hero-encomenda reveal">
+        <h2>Encomendas sob medida</h2>
+        <p>Quer um produto personalizado para o seu grupo, oratório ou pastoral? Fale com a gente pelo WhatsApp.</p>
+        <!-- SUBSTITUA: número de WhatsApp -->
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20fazer%20uma%20encomenda." class="btn btn-outline-light" target="_blank" rel="noopener">Fazer encomenda</a>
+      </div>
+
+      <div class="mosaic-card card-lime hero-contato reveal">
+        <h2>Fica na nossa rede</h2>
+        <p>Bastidores, lançamentos e novidades da coleção você acompanha por lá.</p>
+        <!-- SUBSTITUA: link do Instagram -->
+        <a href="https://instagram.com/SEU_INSTAGRAM" class="link-underline" target="_blank" rel="noopener">@espacojovem</a>
+      </div>
+
+      <div class="mosaic-card card-white hero-ilustra reveal" aria-hidden="true">
+        <svg viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="70" r="34" fill="none" stroke="var(--cyan)" stroke-width="3"/>
+          <path d="M50 150 Q100 100 150 150" fill="none" stroke="var(--pink)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M40 130 l14 -14 M146 130 l14 -14" stroke="var(--yellow)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="100" cy="70" r="4" fill="var(--navy)"/>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== BACKGROUND DOODLES (decorativo, aria-hidden) ==================== -->
+
+  <!-- ==================== CHAVEIROS ==================== -->
+  <section class="section" id="chaveiros" aria-label="Chaveiros">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Chaveiros</h2>
+        <p>Pequenos, marcantes e cheios de significado — pra levar a fé no bolso.</p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- Repita este bloco <article class="product-card"> para cada novo chaveiro -->
+        <article class="product-card reveal">
+          <div class="product-image ph-cyan" role="img" aria-label="Foto do chaveiro Dom Bosco">
+            <!-- SUBSTITUA: <img src="images/chaveiro-01.jpg" alt="Chaveiro Dom Bosco"> -->
+            <svg viewBox="0 0 64 64" width="48" height="48" fill="none"><circle cx="32" cy="14" r="8" stroke="#fff" stroke-width="3"/><rect x="24" y="26" width="16" height="26" rx="6" stroke="#fff" stroke-width="3"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Chaveiro</span>
+            <h3>Chaveiro Dom Bosco</h3>
+            <p>Resina emborrachada, acabamento fosco. Homenagem ao fundador da família salesiana.</p>
+            <!-- SUBSTITUA: número de WhatsApp e nome do produto na mensagem -->
+            <a href="https://wa.me/5511999999999?text=Quero%20o%20Chaveiro%20Dom%20Bosco" class="btn-mini" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-image ph-pink" role="img" aria-label="Foto do chaveiro Maria Auxiliadora">
+            <svg viewBox="0 0 64 64" width="48" height="48" fill="none"><path d="M32 12c-6 0-12 6-12 14 0 12 12 24 12 24s12-12 12-24c0-8-6-14-12-14Z" stroke="#fff" stroke-width="3"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Chaveiro</span>
+            <h3>Chaveiro Maria Auxiliadora</h3>
+            <p>Formato coração, cordão colorido à escolha. Ótimo lembrancinha de encontro.</p>
+            <a href="https://wa.me/5511999999999?text=Quero%20o%20Chaveiro%20Maria%20Auxiliadora" class="btn-mini" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-image ph-lime" role="img" aria-label="Foto do chaveiro Sistema Preventivo">
+            <svg viewBox="0 0 64 64" width="48" height="48" fill="none"><rect x="16" y="16" width="32" height="32" rx="10" stroke="#fff" stroke-width="3"/><path d="M24 32h16M32 24v16" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Chaveiro</span>
+            <h3>Chaveiro "Razão, Religião, Amorevolezza"</h3>
+            <p>Placa gravada com o lema do Sistema Preventivo. Edição limitada.</p>
+            <a href="https://wa.me/5511999999999?text=Quero%20o%20Chaveiro%20Sistema%20Preventivo" class="btn-mini" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-image ph-yellow" role="img" aria-label="Foto do chaveiro Oratório">
+            <svg viewBox="0 0 64 64" width="48" height="48" fill="none"><path d="M20 44V26l12-10 12 10v18" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Chaveiro</span>
+            <h3>Chaveiro Oratório Salesiano</h3>
+            <p>Ilustração em outline do "lar que acolhe". Vários tons disponíveis.</p>
+            <a href="https://wa.me/5511999999999?text=Quero%20o%20Chaveiro%20Orat%C3%B3rio" class="btn-mini" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COPOS ==================== -->
+  <section class="section section-alt" id="copos" aria-label="Copos personalizados">
+    <div class="section-inner">
+      <div class="copos-layout">
+
+        <div class="mosaic-card card-cyan copos-destaque reveal">
+          <h2>Copos personalizados</h2>
+          <p>Pra hidratar o dia com bastante identidade. Térmicos, de plástico ou canecos — todos com estampas exclusivas da coleção.</p>
+          <a href="https://wa.me/5511999999999?text=Quero%20saber%20sobre%20os%20copos" class="btn btn-light" target="_blank" rel="noopener">Pedir o meu</a>
+        </div>
+
+        <div class="copos-modelos">
+
+          <article class="product-card small reveal">
+            <div class="product-image ph-navy" role="img" aria-label="Foto do copo Vem e Verás">
+              <svg viewBox="0 0 64 64" width="40" height="40" fill="none"><path d="M18 20h28l-4 28a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4l-4-28Z" stroke="#fff" stroke-width="3"/></svg>
+            </div>
+            <div class="product-info">
+              <h3>Copo "Vem e Verás"</h3>
+              <p>500ml, canudo reutilizável incluso.</p>
+              <a href="https://wa.me/5511999999999?text=Quero%20o%20Copo%20Vem%20e%20Ver%C3%A1s" class="btn-mini" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card small reveal">
+            <div class="product-image ph-pink" role="img" aria-label="Foto do copo Alegria Salesiana">
+              <svg viewBox="0 0 64 64" width="40" height="40" fill="none"><path d="M18 20h28l-4 28a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4l-4-28Z" stroke="#fff" stroke-width="3"/></svg>
+            </div>
+            <div class="product-info">
+              <h3>Copo "Alegria Salesiana"</h3>
+              <p>Estampa colorida, tampa rosca.</p>
+              <a href="https://wa.me/5511999999999?text=Quero%20o%20Copo%20Alegria%20Salesiana" class="btn-mini" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card small reveal">
+            <div class="product-image ph-lime" role="img" aria-label="Foto do copo AJS">
+              <svg viewBox="0 0 64 64" width="40" height="40" fill="none"><path d="M18 20h28l-4 28a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4l-4-28Z" stroke="#fff" stroke-width="3"/></svg>
+            </div>
+            <div class="product-info">
+              <h3>Copo Articulação Jovem</h3>
+              <p>Térmico, mantém a temperatura por horas.</p>
+              <a href="https://wa.me/5511999999999?text=Quero%20o%20Copo%20AJS" class="btn-mini" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </article>
+
+          <article class="product-card small reveal">
+            <div class="product-image ph-yellow" role="img" aria-label="Foto do copo Dom Bosco jovem">
+              <svg viewBox="0 0 64 64" width="40" height="40" fill="none"><path d="M18 20h28l-4 28a4 4 0 0 1-4 4H26a4 4 0 0 1-4-4l-4-28Z" stroke="#fff" stroke-width="3"/></svg>
+            </div>
+            <div class="product-info">
+              <h3>Copo "Dom Bosco Jovem"</h3>
+              <p>Ilustração exclusiva, edição comemorativa.</p>
+              <a href="https://wa.me/5511999999999?text=Quero%20o%20Copo%20Dom%20Bosco%20Jovem" class="btn-mini" target="_blank" rel="noopener">Pedir</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CAMISETAS ==================== -->
+  <section class="section" id="camisetas" aria-label="Camisetas">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Camisas</h2>
+        <p>Pra vestir a missão todos os dias — em algodão macio e estampas que contam uma história.</p>
+      </div>
+
+      <div class="camisetas-grid">
+
+        <article class="product-card big reveal">
+          <div class="product-image ph-cyan" role="img" aria-label="Foto da camiseta Retiro Vocacional">
+            <!-- SUBSTITUA: <img src="images/camiseta-01.jpg" alt="Camiseta Retiro Vocacional"> -->
+            <svg viewBox="0 0 64 64" width="56" height="56" fill="none"><path d="M22 14 12 22l6 8v20h28V30l6-8-10-8-6 6h-8l-6-6Z" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Camiseta</span>
+            <h3>Camiseta Retiro Vocacional 2026</h3>
+            <p>Estampa exclusiva da edição deste ano. Malha 100% algodão, unissex, do P ao GG.</p>
+            <a href="https://wa.me/5511999999999?text=Quero%20a%20Camiseta%20Retiro%20Vocacional" class="btn-mini" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-image ph-pink" role="img" aria-label="Foto da camiseta Juventude que Evangeliza">
+            <svg viewBox="0 0 64 64" width="48" height="48" fill="none"><path d="M22 14 12 22l6 8v20h28V30l6-8-10-8-6 6h-8l-6-6Z" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Camiseta</span>
+            <h3>Camiseta "Juventude que Evangeliza"</h3>
+            <p>Estampa frente e verso, tecido leve para o dia a dia.</p>
+            <a href="https://wa.me/5511999999999?text=Quero%20a%20Camiseta%20Juventude%20que%20Evangeliza" class="btn-mini" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-image ph-lime" role="img" aria-label="Foto da camiseta AJS Americana">
+            <svg viewBox="0 0 64 64" width="48" height="48" fill="none"><path d="M22 14 12 22l6 8v20h28V30l6-8-10-8-6 6h-8l-6-6Z" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Camiseta</span>
+            <h3>Camiseta Oficial AJS</h3>
+            <p>A camiseta que identifica o grupo em eventos e encontros.</p>
+            <a href="https://wa.me/5511999999999?text=Quero%20a%20Camiseta%20Oficial%20AJS" class="btn-mini" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </article>
+
+        <article class="product-card wide reveal">
+          <div class="product-image ph-yellow" role="img" aria-label="Foto da camiseta Sistema Preventivo">
+            <svg viewBox="0 0 64 64" width="48" height="48" fill="none"><path d="M22 14 12 22l6 8v20h28V30l6-8-10-8-6 6h-8l-6-6Z" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Camiseta</span>
+            <h3>Camiseta "Razão, Religião e Amorevolezza"</h3>
+            <p>Tipografia exclusiva com o lema do Sistema Preventivo de Dom Bosco, em serigrafia de alta durabilidade.</p>
+            <a href="https://wa.me/5511999999999?text=Quero%20a%20Camiseta%20Sistema%20Preventivo" class="btn-mini" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OUTROS ==================== -->
+  <section class="section section-alt" id="outros" aria-label="Outros produtos">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Outros</h2>
+        <p>Bottons, cadernos, canecas, terços e mais — a coleção não para de crescer.</p>
+      </div>
+
+      <!--
+        COMO ADICIONAR UM NOVO PRODUTO NESTA SEÇÃO:
+        Copie o bloco <article class="product-card outros-card reveal">...</article> abaixo,
+        cole antes do fechamento da .outros-grid e troque texto/imagem/link.
+      -->
+      <div class="outros-grid">
+
+        <article class="product-card outros-card reveal">
+          <div class="product-image ph-cyan"><svg viewBox="0 0 64 64" width="36" height="36" fill="none"><circle cx="32" cy="32" r="16" stroke="#fff" stroke-width="3"/></svg></div>
+          <div class="product-info"><h3>Bottons</h3><p>Kit com 3 unidades, temas variados.</p><a href="https://wa.me/5511999999999?text=Quero%20os%20Bottons" class="btn-mini" target="_blank" rel="noopener">Pedir</a></div>
+        </article>
+
+        <article class="product-card outros-card reveal">
+          <div class="product-image ph-pink"><svg viewBox="0 0 64 64" width="36" height="36" fill="none"><rect x="16" y="12" width="32" height="40" rx="4" stroke="#fff" stroke-width="3"/></svg></div>
+          <div class="product-info"><h3>Caderno</h3><p>Capa dura personalizada, 80 folhas.</p><a href="https://wa.me/5511999999999?text=Quero%20o%20Caderno" class="btn-mini" target="_blank" rel="noopener">Pedir</a></div>
+        </article>
+
+        <article class="product-card outros-card reveal">
+          <div class="product-image ph-lime"><svg viewBox="0 0 64 64" width="36" height="36" fill="none"><path d="M20 20h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4V24a4 4 0 0 1 4-4Z" stroke="#fff" stroke-width="3"/><path d="M44 26h4v10h-4" stroke="#fff" stroke-width="3"/></svg></div>
+          <div class="product-info"><h3>Caneca</h3><p>Cerâmica 300ml, estampa exclusiva.</p><a href="https://wa.me/5511999999999?text=Quero%20a%20Caneca" class="btn-mini" target="_blank" rel="noopener">Pedir</a></div>
+        </article>
+
+        <article class="product-card outros-card reveal">
+          <div class="product-image ph-yellow"><svg viewBox="0 0 64 64" width="36" height="36" fill="none"><rect x="22" y="10" width="20" height="44" rx="8" stroke="#fff" stroke-width="3"/></svg></div>
+          <div class="product-info"><h3>Garrafa</h3><p>Squeeze 600ml, alça de silicone.</p><a href="https://wa.me/5511999999999?text=Quero%20a%20Garrafa" class="btn-mini" target="_blank" rel="noopener">Pedir</a></div>
+        </article>
+
+        <article class="product-card outros-card reveal">
+          <div class="product-image ph-navy"><svg viewBox="0 0 64 64" width="36" height="36" fill="none"><circle cx="32" cy="32" r="18" stroke="#fff" stroke-width="3" stroke-dasharray="4 5"/></svg></div>
+          <div class="product-info"><h3>Terço</h3><p>Contas de madeira, crucifixo artesanal.</p><a href="https://wa.me/5511999999999?text=Quero%20o%20Ter%C3%A7o" class="btn-mini" target="_blank" rel="noopener">Pedir</a></div>
+        </article>
+
+        <article class="product-card outros-card reveal">
+          <div class="product-image ph-cyan"><svg viewBox="0 0 64 64" width="36" height="36" fill="none"><path d="M16 24h32M16 32h32M16 40h20" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></div>
+          <div class="product-info"><h3>Cartela de adesivos</h3><p>10 adesivos vinílicos, resistentes à água.</p><a href="https://wa.me/5511999999999?text=Quero%20os%20Adesivos" class="btn-mini" target="_blank" rel="noopener">Pedir</a></div>
+        </article>
+
+        <article class="product-card outros-card reveal">
+          <div class="product-image ph-pink"><svg viewBox="0 0 64 64" width="36" height="36" fill="none"><path d="M14 30a18 18 0 0 1 36 0" stroke="#fff" stroke-width="3"/><rect x="12" y="30" width="8" height="12" rx="2" stroke="#fff" stroke-width="3"/><rect x="44" y="30" width="8" height="12" rx="2" stroke="#fff" stroke-width="3"/></svg></div>
+          <div class="product-info"><h3>Boné</h3><p>Aba curva, bordado da coleção.</p><a href="https://wa.me/5511999999999?text=Quero%20o%20Bon%C3%A9" class="btn-mini" target="_blank" rel="noopener">Pedir</a></div>
+        </article>
+
+        <article class="product-card outros-card reveal">
+          <div class="product-image ph-lime"><svg viewBox="0 0 64 64" width="36" height="36" fill="none"><path d="M32 14v36M18 26h28" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></div>
+          <div class="product-info"><h3>Brinde surpresa</h3><p>Pergunte sobre os brindes de encontros e eventos.</p><a href="https://wa.me/5511999999999?text=Quero%20saber%20dos%20brindes" class="btn-mini" target="_blank" rel="noopener">Pedir</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VOCACIONAL ==================== -->
+  <section class="section vocacional" id="vocacional" aria-label="Coleção Vocacional">
+    <div class="section-inner">
+      <div class="vocacional-grid">
+
+        <div class="vocacional-texto reveal">
+          <span class="voc-tag">Coleção Vocacional</span>
+          <h2>Uma coleção pra quem está em busca da própria vocação.</h2>
+          <p>Criada para acompanhar o processo de discernimento vocacional da juventude salesiana, a Coleção Vocacional reúne produtos que ajudam a manter viva a pergunta: "Senhor, o que queres de mim?"</p>
+          <p class="voc-frase">"Vem e verás." — um convite a experimentar, antes de decidir.</p>
+          <p>Toda a renda arrecadada com esta linha é revertida para os encontros, retiros e materiais do grupo vocacional da região.</p>
+          <!-- SUBSTITUA: número de WhatsApp -->
+          <a href="https://wa.me/5511999999999?text=Quero%20saber%20mais%20sobre%20a%20Coleção%20Vocacional" class="btn btn-navy" target="_blank" rel="noopener">Falar com o grupo vocacional</a>
+        </div>
+
+        <div class="vocacional-card reveal">
+          <div class="vocacional-img" role="img" aria-label="Ilustração da Coleção Vocacional">
+            <!-- SUBSTITUA: <img src="images/vocacional.jpg" alt="Coleção Vocacional"> -->
+            <svg viewBox="0 0 120 120" width="80" height="80" fill="none"><path d="M60 20 L74 48 L104 52 L82 72 L88 102 L60 87 L32 102 L38 72 L16 52 L46 48 Z" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg>
+          </div>
+          <ul class="vocacional-lista">
+            <li>Camisetas e chaveiros da linha vocacional</li>
+            <li>Materiais de apoio para retiros e encontros</li>
+            <li>Renda revertida para a pastoral vocacional</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SOBRE ==================== -->
+  <section class="section" id="sobre" aria-label="Sobre a loja">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Sobre</h2>
+        <p>Mais do que uma loja, um projeto da juventude salesiana.</p>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="mosaic-card card-navy sobre-card reveal">
+          <h3>Evangelização criativa</h3>
+          <p>Cada produto nasce dentro da pastoral juvenil, como forma de anunciar a fé com linguagem jovem.</p>
+        </div>
+        <div class="mosaic-card card-cyan sobre-card reveal">
+          <h3>Missão além da venda</h3>
+          <p>O que arrecadamos financia retiros, encontros e projetos das comunidades salesianas.</p>
+        </div>
+        <div class="mosaic-card card-pink sobre-card reveal">
+          <h3>Feito por jovens</h3>
+          <p>Design, produção e atendimento são conduzidos por jovens da própria articulação.</p>
+        </div>
+        <div class="mosaic-card card-yellow-dark sobre-card reveal">
+          <h3>Educação e criatividade</h3>
+          <p>Seguimos o Sistema Preventivo de Dom Bosco: razão, religião e amorevolezza em cada detalhe.</p>
+        </div>
+      </div>
+
+      <!-- LOCALIZAÇÃO -->
+      <div class="localizacao reveal">
+        <div class="localizacao-info">
+          <span class="loc-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="44" height="44" fill="none"><path d="M24 6c-8 0-14 6-14 14 0 10 14 22 14 22s14-12 14-22c0-8-6-14-14-14Z" stroke="var(--pink)" stroke-width="3"/><circle cx="24" cy="20" r="5" stroke="var(--pink)" stroke-width="3"/></svg>
+          </span>
+          <div>
+            <!-- SUBSTITUA: nome da instituição, endereço e cidade -->
+            <h3>Articulação da Juventude Salesiana</h3>
+            <p>Rua Exemplo, 123 — Bairro Central<br>Americana / SP</p>
+            <a href="https://maps.google.com/?q=Endereco+da+loja" class="btn btn-outline-navy" target="_blank" rel="noopener">Como chegar</a>
+          </div>
+        </div>
+        <div class="localizacao-mapa" role="img" aria-label="Espaço reservado para o mapa de localização">
+          <!-- SUBSTITUA: incorporar aqui um iframe do Google Maps -->
+          <span>Mapa em breve</span>
+        </div>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="redes-sociais">
+        <h3 class="redes-titulo">Nos siga por aí</h3>
+        <div class="redes-grid">
+          <!-- SUBSTITUA: link do Instagram -->
+          <a class="rede-card rede-instagram reveal" href="https://instagram.com/SEU_INSTAGRAM" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.1" fill="#fff"/></svg>
+            <span>Instagram</span>
+          </a>
+          <!-- SUBSTITUA: link do Facebook -->
+          <a class="rede-card rede-facebook reveal" href="https://facebook.com/SEU_FACEBOOK" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v2H8v4h2v6h4v-6h3l1-4h-4V9c0-.6.4-1 1-1Z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span>Facebook</span>
+          </a>
+          <!-- SUBSTITUA: link do YouTube -->
+          <a class="rede-card rede-youtube reveal" href="https://youtube.com/@SEU_CANAL" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none"><rect x="2.5" y="6" width="19" height="12" rx="4" stroke="#fff" stroke-width="1.8"/><path d="M10.5 9.5v5l4.5-2.5-4.5-2.5Z" fill="#fff"/></svg>
+            <span>YouTube</span>
+          </a>
+          <!-- SUBSTITUA: link do Spotify -->
+          <a class="rede-card rede-spotify reveal" href="https://open.spotify.com/user/SEU_PERFIL" target="_blank" rel="noopener" aria-label="Spotify">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none"><circle cx="12" cy="12" r="9.2" stroke="#fff" stroke-width="1.8"/><path d="M7 10.2c3-1 7-.6 9.6 1M7.4 13.2c2.4-.7 5.6-.4 7.7.9M8 16c1.8-.5 4-.3 5.6.7" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span>Spotify</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="#fff" stroke-width="2.5"/>
+          <path d="M13 24c2-6 5-9 7-9s5 3 7 9" stroke="var(--pink)" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="20" cy="14" r="2.6" fill="var(--yellow)"/>
+        </svg>
+      </span>
+      <!-- SUBSTITUA: nome da loja -->
+      <p>Espaço Jovem — Loja da Articulação da Juventude Salesiana.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="#chaveiros">Chaveiros</a>
+      <a href="#copos">Copos</a>
+      <a href="#camisetas">Camisas</a>
+      <a href="#outros">Outros</a>
+      <a href="#vocacional">Vocacional</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+
+    <div class="footer-social">
+      <!-- SUBSTITUA: links das redes sociais -->
+      <a href="https://instagram.com/SEU_INSTAGRAM" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com/SEU_FACEBOOK" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      <a href="https://youtube.com/@SEU_CANAL" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+      <a href="https://open.spotify.com/user/SEU_PERFIL" target="_blank" rel="noopener" aria-label="Spotify">Spotify</a>
+    </div>
+
+    <div class="footer-contato">
+      <!-- SUBSTITUA: e-mail e telefone de contato -->
+      <p>contato@espacojovem.com.br</p>
+      <p>(11) 99999-9999</p>
+    </div>
+  </div>
+
+  <p class="footer-copy">© <span id="anoAtual">2026</span> Espaço Jovem. Feito com fé e criatividade.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
